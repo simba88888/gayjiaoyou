@@ -123,7 +123,7 @@ jssdkconfig.jsApiList = [
 			<span class="vcc">资料展现</span>
 		</span>
 		<div class="vcont">
-			<div class="vcstate">1-3次资料朋友圈、公众号、相亲群展示，获得大量曝光，提升脱单效率。</div>
+			<div class="vcstate">1-3次资料朋友圈、公众号、同性交友群展示，获得大量曝光，提升交友效率。</div>
 			<!-- <div class="vimg">
 				<img src="#"/>
 			</div> -->
@@ -136,7 +136,7 @@ jssdkconfig.jsApiList = [
 			<span class="vcc">优先服务</span>
 		</span>
 		<div class="vcont">
-			<div class="vcstate">如遇到感情和相亲问题，可优先解决</div>
+			<div class="vcstate">如遇到感情和同性交友问题，可优先解决</div>
 			<!-- <div class="vimg">
 				<img src="#"/>
 			</div> -->
@@ -155,20 +155,42 @@ jssdkconfig.jsApiList = [
 			</div> -->
 		</div>
 	</div>
-	
+	<div class="lr">
+			<div class="popup" id="pop" style="top:0;z-index:5;">
+				<div class="popc" style="margin:35% auto;">
+					<img src="addons/yy_shequn2/template/mobile/images/delet.png" class="delet" id="closebutt" onclick="closeButton(1)"/>
+					<span></span>
+					<img src="addons/yy_shequn2/template/mobile/images/gongzhonghao.jpg" class="eq"/>	
+					<p>长按识别</p>
+				</div>
+			</div>
+			<div class="vpay" id="openbutt" onclick="clickButton()">立即添加客服，成为VIP</div>
+			<!-- <input type="button" style=" "  value="添加客服" id="openbutt" onclick="clickButton()" class="inp"/> -->
+		</div>
 	
 	<!-- <a href="index3f6c.html?i=3&amp;c=entry&amp;do=vipPay&amp;m=yy_shequn2"> -->
 		<!-- <a href="https://mp.weixin.qq.com/s?__biz=MzA5MTg3NzA5Mw==&mid=2650031971&idx=2&sn=86de84c392cde1d57e50abbd1eb290a6&chksm=88755ce9bf02d5ffd21ea0ee261c553548ba0d8862a97bd6ddc965a5b50c14e6a20f2ceddb69#rd"> -->
-			<a href="https://mp.weixin.qq.com/s?__biz=MzA5MTg3NzA5Mw==&mid=2650031855&idx=1&sn=aff9facbf84256e4eecb3cda9cc2dd0e&chksm=88755d65bf02d473baace279df0c5401e075f95eb102f86b4812234a8561cdc265ce0ceb9819#rd">
+			<!-- <a href="https://mp.weixin.qq.com/s?__biz=MzA5MTg3NzA5Mw==&mid=2650031855&idx=1&sn=aff9facbf84256e4eecb3cda9cc2dd0e&chksm=88755d65bf02d473baace279df0c5401e075f95eb102f86b4812234a8561cdc265ce0ceb9819#rd">
 				
-			<div class="vpay">立即支付38.8元 成为VIP</div>
-	</a>
+			<div class="vpay">立即添加客服，成为VIP</div>
+	</a> -->
 	<script>;</script><script type="text/javascript" src="https://pc.hanbing365.cn/app/index.php?i=3&amp;c=utility&amp;a=visit&amp;do=showjs&amp;m=yy_shequn2"></script></body>
 <script type="text/javascript" src="addons/yy_shequn2/template/mobile/images/js/base.js"></script>
 <script type="text/javascript" src="addons/yy_shequn2/template/mobile/images/js/jQuery.textSlider.js"></script>
 <script type="text/javascript">
 	$(".hmpub_slide").textSlider({line:1,speed:500,timer:5000});		
 </script>
-
+<script>
+	function clickButton(){
+		var popupName = 'pop';
+		var popup = document.getElementById(popupName);
+	    popup.style.display="block";   
+	}
+	function closeButton(){
+		var popupName = 'pop';
+		var popup=document.getElementById(popupName);
+		popup.style.display="none";
+	}
+</script>
 <!-- Mirrored from pf.hanbing365.cn/app/index.php?i=3&c=entry&do=vipContent&m=yy_shequn2 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Dec 2022 14:03:17 GMT -->
 </html>

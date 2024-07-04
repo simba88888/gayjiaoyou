@@ -1430,7 +1430,7 @@ div.clear{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 13rem;
+    margin-top: 13rem;
 }
 .viptit .vline{
 	width:2rem;
